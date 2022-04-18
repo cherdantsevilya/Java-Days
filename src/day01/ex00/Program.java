@@ -18,6 +18,6 @@ public class Program {
     System.out.println();
     Transaction transaction4 = new Transaction(y, mike, john, TransferCategory.debit, 0);
     System.out.println();
-	    
+
     }
 }
