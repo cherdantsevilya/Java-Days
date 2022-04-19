@@ -1,7 +1,5 @@
 package day01.ex02;
 
-import day01.ex01.UserIdsGenerator;
-
 public class User {
 
     private final int id;
