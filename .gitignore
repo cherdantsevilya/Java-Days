@@ -7,6 +7,7 @@
 *.war
 *.ear
 *.zip
+*.xml
 *.tar.gz
 *.rar
 out
