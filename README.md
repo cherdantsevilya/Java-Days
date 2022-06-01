@@ -1,2 +1,2 @@
-# Java_piscine
+# Java-Days
 *in progress..* 🐒
