@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS "User";
+
+CREATE TABLE IF NOT EXISTS "User" (
+    id BIGINT,
+    email VARCHAR NOT NULL
+);
