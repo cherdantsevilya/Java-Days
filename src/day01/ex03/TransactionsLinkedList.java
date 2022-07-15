@@ -6,7 +6,7 @@ public class TransactionsLinkedList implements TransactionsList {
 
     private final Transaction start = new Transaction();
     private final Transaction finish = new Transaction();
-    private int numOfListElements;
+    private Integer numOfListElements;
 
     public TransactionsLinkedList() {
         start.setNext(finish);

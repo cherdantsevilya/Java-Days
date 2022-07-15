@@ -6,7 +6,7 @@ public class Program {
         UsersList list = new UsersArrayList();
         User john = new User("John", 21);
         User mike = new User("Mike", 543);
-        User kevin = new User("Kevin", 123);
+        User kevin = new User("Kevin", 5);
 
         System.out.println(john);
         System.out.println(mike);

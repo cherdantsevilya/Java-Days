@@ -1,9 +1,11 @@
 package day01.ex03;
 
+import java.util.Objects;
+
 public class UsersArrayList implements UsersList {
 
     private User[] users;
-    private int count;
+    private Integer count;
 
     public UsersArrayList() {
         this.users = new User[10];
@@ -23,21 +25,21 @@ public class UsersArrayList implements UsersList {
     }
 
     @Override
-    public User getUserById(int id) {
+    public User getUserById(Integer id) {
         for (int i = 0; i < count; i++) {
-            if (users[i].getId() == id)
+            if (Objects.equals(users[i].getId(), id))
                 return users[i];
         }
         throw new UserNotFoundException("User with id " + id + " not found");
     }
 
     @Override
-    public User getUserByIndex(int index) {
+    public User getUserByIndex(Integer index) {
         return this.users[index];
     }
 
     @Override
-    public int getNumOfUsers() {
+    public Integer getNumOfUsers() {
         return this.count;
     }
 }

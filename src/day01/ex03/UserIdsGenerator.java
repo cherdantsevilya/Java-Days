@@ -3,7 +3,7 @@ package day01.ex03;
 public class UserIdsGenerator {
 
     private static UserIdsGenerator instance;
-    private static int id;
+    private static Integer id = 0;
 
     private UserIdsGenerator() {};
 
@@ -13,6 +13,6 @@ public class UserIdsGenerator {
         return instance;
     }
 
-    public int generateId() { return id++; }
+    public Integer generateId() { return id++; }
 
 }

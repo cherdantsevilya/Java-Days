@@ -10,11 +10,14 @@ public class Program {
         User mike = new User("Mike", 2342);
 
         UUID id1 = UUID.randomUUID();
-        Transaction t1 = new Transaction(id1, mike, john, TransferCategory.debit, 500);
+        Transaction t1 = new Transaction(id1, mike, john, TransferCategory.DEBIT, 500);
+        System.out.println(t1);
         UUID id2 = UUID.randomUUID();
-        Transaction t2 = new Transaction(id2, mike, john, TransferCategory.debit, 4231);
+        Transaction t2 = new Transaction(id2, mike, john, TransferCategory.DEBIT, 4231);
+        System.out.println(t2);
         UUID id3 = UUID.randomUUID();
-        Transaction t3 = new Transaction(id3, john, mike, TransferCategory.debit, 5);
+        Transaction t3 = new Transaction(id3, john, mike, TransferCategory.DEBIT, 5);
+        System.out.println(t3);
         System.out.println();
 
         TransactionsLinkedList list = new TransactionsLinkedList();

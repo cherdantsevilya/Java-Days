@@ -2,29 +2,34 @@ package day01.ex00;
 
 public class User {
 
-    private int id;
+    private Integer id;
     private String name;
-    private int balance;
+    private Integer balance;
 
-    public User(int id, String name, int balance) {
+    public User(Integer id, String name, Integer balance) {
         this.id = id;
         this.name = name;
-        if (balance > 0)
-            this.balance = balance;
-        else
+        if (balance == null || balance <= 0)
             this.balance = 0;
+        else
+            this.balance = balance;
     }
 
-    public int getId() { return this.id; }
+    public Integer getId() { return this.id; }
 
     public String getName() { return this.name; }
 
-    public int getBalance() { return this.balance; }
+    public Integer getBalance() { return this.balance; }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(Integer id) { this.id = id; }
 
     public void setName(String name) { this.name = name; }
 
-    public void setBalance(int balance) { this.balance = balance; }
+    public void setBalance(Integer balance) {
+        if (balance == null || balance <= 0)
+            this.balance = 0;
+        else
+            this.balance = balance;
+    }
 
 }
