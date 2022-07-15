@@ -15,8 +15,6 @@ public class Program {
         BufferedImage bufferedImage;
 
         if (!(args.length == 3 && args[0].length() == 1 && args[1].length() == 1)) {
-            System.out.println(args[0].length());
-            System.out.println(args[1].length());
             System.out.println("Error");
             System.exit(-1);
         }
